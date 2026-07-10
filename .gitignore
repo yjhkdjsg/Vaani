@@ -1,0 +1,125 @@
+# .gitignore for Vaani Prototype
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+*.pyc
+
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+.terraform.lock.hcl
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+
+# AWS
+.aws/
+*.pem
+
+# Build artifacts
+build/
+*.zip
+lambda_layer/
+recording_handler/
+call_handler/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+test_output.mp3
+pipeline_test_output.mp3
+
+# Logs
+*.log
+logs/
+*.log.*
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
+
+# OS
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# Audio files (except samples)
+*.mp3
+*.wav
+*.ogg
+!samples/*.mp3
+
+# Documentation builds
+docs/_build/
+site/
+
+# Secrets
+secrets.json
+credentials.json
+*.key
+*.secret
+
+# Node (if you add any frontend later)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Lambda deployment packages
+*.zip.backup
